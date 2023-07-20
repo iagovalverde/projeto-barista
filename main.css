@@ -1,0 +1,106 @@
+:root {
+    --primary: #25171A;
+    --secondary: #F5DEB3;
+    --tertiary: #E6BE8A;
+    --quaternary: #ffeae6;
+    --quinary: #000;
+    --title: 'Allura', cursive;
+    --text: 'Open Sans', sans-serif;
+}
+
+body {
+    color: var(--primary);
+    font-family: var(--text);
+}
+
+.navbar {
+    background-color: var(--primary);
+}
+
+#sobre-cafeteria,
+#cardapio {
+    background-color: var(--secondary);
+}
+
+#eventos,
+#fale-conosco {
+    background-color: #fff;
+}
+
+#cabecalho .nav .nav-link.active,
+.nav-cardapio .nav-link {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover {
+    color: var(--tertiary);
+}
+
+.navbar-toggler {
+    background-color: var(--secondary);
+}
+
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+table th {
+    background-color: var(--primary) !important;
+    color: var(--secondary) !important;
+    border: 1px solid var(--secondary) !important;
+    border-color: var(--secondary) !important;
+}
+
+table td {
+    background-color: var(--secondary) !important;
+    color: var(--primary) !important;
+    border: 1px solid var(--secondary) !important;
+    border-color: var(--primary) !important;
+}
+
+.section-title {
+    font-family: var(--title);
+    font-weight: bolder;
+    font-size: 3em;
+    color: var(--tertiary);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-colored {
+    color: var(--primary);
+}
+
+.tab-content img {
+    height: 140px;
+}
+
+.social-links li,
+.funcionamento {
+    display: inline;
+    list-style: none;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+
+    .tab-content img {
+        height: fit-content;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+    #cardapio aside {
+        padding: 5px;
+    }
+}
